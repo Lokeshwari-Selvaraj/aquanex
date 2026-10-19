@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AQUANEX | Weather Data</title>
+
+    <link rel="stylesheet"
+          href="../css/weather.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+            🌊 AQUA<span>NEX</span>
+        </div>
+
+        <nav>
+
+            <a href="../index.html">
+                🏠 Home
+            </a>
+
+            <a href="emergency.html">
+    Emergency Alerts
+</a>
+
+<a href="safety.html">
+        🛡️ Safety
+    </a>
+    
+            <a href="location.html">
+                📍 Location
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="weather-container">
+
+        <section class="weather-heading">
+
+            <span>
+                AQUANEX WEATHER MONITORING
+            </span>
+
+            <h1>
+                Weather Data Collection
+            </h1>
+
+            <p>
+                Weather information from your selected
+                location is collected to help AQUANEX
+                predict waterlogging risk.
+            </p>
+
+        </section>
+
+
+        <!-- ================= SELECTED LOCATION ================= -->
+
+        <section class="location-info">
+
+            <h2>
+                📍 Selected Location
+            </h2>
+
+            <div class="coordinates">
+
+                <div>
+                    <strong>Latitude</strong>
+
+                    <p id="latitude">
+                        Not Selected
+                    </p>
+                </div>
+
+                <div>
+                    <strong>Longitude</strong>
+
+                    <p id="longitude">
+                        Not Selected
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= WEATHER BUTTON ================= -->
+
+        <div class="weather-action">
+
+            <button onclick="getWeatherData()">
+
+                🌦️ Get Weather Data
+
+            </button>
+
+        </div>
+
+
+        <!-- ================= STATUS ================= -->
+
+        <div id="weatherStatus"
+             class="status">
+
+            Select a location first, then click
+            "Get Weather Data".
+
+        </div>
+
+
+        <!-- ================= WEATHER CARDS ================= -->
+
+        <section class="weather-grid">
+
+
+            <!-- TEMPERATURE -->
+
+            <div class="weather-card">
+
+                <div class="weather-icon">
+                    🌡️
+                </div>
+
+                <h3>
+                    Temperature
+                </h3>
+
+                <p id="temperature">
+                    -- °C
+                </p>
+
+            </div>
+
+
+            <!-- HUMIDITY -->
+
+            <div class="weather-card">
+
+                <div class="weather-icon">
+                    💧
+                </div>
+
+                <h3>
+                    Humidity
+                </h3>
+
+                <p id="humidity">
+                    -- %
+                </p>
+
+            </div>
+
+
+            <!-- RAINFALL -->
+
+            <div class="weather-card rain-card">
+
+                <div class="weather-icon">
+                    🌧️
+                </div>
+
+                <h3>
+                    Rainfall
+                </h3>
+
+                <p id="rainfall">
+                    -- mm
+                </p>
+
+            </div>
+
+
+            <!-- WIND -->
+
+            <div class="weather-card">
+
+                <div class="weather-icon">
+                    💨
+                </div>
+
+                <h3>
+                    Wind Speed
+                </h3>
+
+                <p id="wind">
+                    -- m/s
+                </p>
+
+            </div>
+
+
+            <!-- PRESSURE -->
+
+            <div class="weather-card">
+
+                <div class="weather-icon">
+                    🌍
+                </div>
+
+                <h3>
+                    Pressure
+                </h3>
+
+                <p id="pressure">
+                    -- hPa
+                </p>
+
+            </div>
+
+
+            <!-- CLOUD -->
+
+            <div class="weather-card">
+
+                <div class="weather-icon">
+                    ☁️
+                </div>
+
+                <h3>
+                    Cloud Coverage
+                </h3>
+
+                <p id="clouds">
+                    -- %
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= WEATHER SUMMARY ================= -->
+
+        <section class="weather-summary">
+
+            <h2>
+                🌦️ Weather Condition
+            </h2>
+
+            <div class="summary-content">
+
+                <div class="condition-icon"
+                     id="conditionIcon">
+
+                    🌤️
+
+                </div>
+
+                <div>
+
+                    <h3 id="condition">
+                        Waiting for data
+                    </h3>
+
+                    <p id="description">
+                        Weather information will
+                        appear here.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= DATA USED FOR PREDICTION ================= -->
+
+        <section class="prediction-data">
+
+            <h2>
+                🔮 Data Used for Prediction
+            </h2>
+
+            <p>
+                AQUANEX will use the following
+                environmental information for
+                waterlogging prediction:
+            </p>
+
+            <div class="data-list">
+
+                <span>🌧️ Rainfall</span>
+
+                <span>🌡️ Temperature</span>
+
+                <span>💧 Humidity</span>
+
+                <span>💨 Wind Speed</span>
+
+                <span>☁️ Cloud Coverage</span>
+
+                <span>🌍 Pressure</span>
+
+                <span>📍 Location</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= NEXT FEATURE ================= -->
+
+        <section class="next-section">
+
+            <h2>
+                Weather Data Collected Successfully?
+            </h2>
+
+            <p>
+                The collected weather information
+                will be used in the next stage to
+                analyze and predict waterlogging risk.
+            </p>
+
+            <button onclick="goToPrediction()">
+
+                🔮 Continue to Prediction
+
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div>
+            🌊 AQUANEX
+        </div>
+
+        <p>
+            Water Logging Prediction System
+        </p>
+
+        <p>
+            Predict • Monitor • Alert • Protect
+        </p>
+
+        <p>
+            © 2026 AQUANEX. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="../js/weather.js"></script>
+
+</body>
+
+</html>

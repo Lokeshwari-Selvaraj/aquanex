@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AQUANEX | Water Logging Prediction</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+            🌊 AQUA<span>NEX</span>
+        </div>
+
+        <nav>
+
+            <a href="#home">Home</a>
+
+            <a href="#features">Features</a>
+
+            <a href="#how-it-works">How It Works</a>
+
+            <a href="#benefits">Benefits</a>
+
+            <a href="#contact">Contact</a>
+
+            <a href="pages/emergency.html">Emergency Alerts</a>
+
+            <a href="pages/admin.html">Admin Dashboard</a>
+
+            <button class="primary-btn"
+                    onclick="window.location.href='pages/location.html'">
+
+                📍 Check My Area
+
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HOME / HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="small-title">
+                SMART WATER SAFETY SYSTEM
+            </div>
+
+            <h1>
+                AQUANEX
+            </h1>
+
+            <h2>
+                Water Logging Prediction System
+            </h2>
+
+            <p>
+                Predict waterlogging before it happens.
+                AQUANEX monitors rainfall, weather,
+                water levels and location data to
+                identify potential waterlogging risks
+                and provide early warnings.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button class="primary-btn"
+                        onclick="checkArea()">
+
+                    📍 Check My Area
+
+                </button>
+
+                <button class="secondary-btn"
+                        onclick="learnMore()">
+
+                    Learn More
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- HERO VISUAL -->
+
+        <div class="hero-visual">
+
+            <div class="water-circle">
+
+                <div class="wave">
+                    🌊
+                </div>
+
+                <div class="sensor-icon">
+                    📡
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= QUICK STATUS ================= -->
+
+    <section class="status-section">
+
+        <h2>
+            AQUANEX Smart Monitoring
+        </h2>
+
+        <p class="section-description">
+            Monitor the important factors that
+            contribute to waterlogging.
+        </p>
+
+
+        <div class="status-grid">
+
+
+            <div class="status-card">
+
+                <div class="card-icon">
+                    📍
+                </div>
+
+                <h3>
+                    Location
+                </h3>
+
+                <p>
+                    Select your location using GPS
+                    or an interactive map.
+                </p>
+
+            </div>
+
+
+            <div class="status-card">
+
+                <div class="card-icon">
+                    🌧️
+                </div>
+
+                <h3>
+                    Rainfall
+                </h3>
+
+                <p>
+                    Monitor rainfall intensity and
+                    changing weather conditions.
+                </p>
+
+            </div>
+
+
+            <div class="status-card">
+
+                <div class="card-icon">
+                    💧
+                </div>
+
+                <h3>
+                    Water Level
+                </h3>
+
+                <p>
+                    Monitor water levels using
+                    IoT sensors.
+                </p>
+
+            </div>
+
+
+            <div class="status-card">
+
+                <div class="card-icon">
+                    🔮
+                </div>
+
+                <h3>
+                    Prediction
+                </h3>
+
+                <p>
+                    Analyze collected information
+                    and predict waterlogging risk.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FEATURES ================= -->
+
+    <section class="features-section"
+             id="features">
+
+        <h2 class="section-title">
+            AQUANEX Features
+        </h2>
+
+        <p class="section-description">
+            Everything needed to monitor and
+            predict waterlogging.
+        </p>
+
+
+        <div class="feature-grid">
+
+
+            <!-- USER REGISTRATION -->
+
+           <div class="feature-card"
+     onclick="window.location.href='pages/register.html'"
+     style="cursor: pointer;">
+
+    <div class="feature-icon">
+        👤
+    </div>
+
+    <h3>
+        User Registration
+    </h3>
+
+    <p>
+        Users can securely register and
+        access the AQUANEX system.
+    </p>
+
+</div>
+
+
+            <!-- LOCATION SELECTION -->
+
+            <div class="feature-card"
+                 onclick="window.location.href='pages/location.html'"
+                 style="cursor: pointer;">
+
+                <div class="feature-icon">
+                    📍
+                </div>
+
+                <h3>
+                    Location Selection
+                </h3>
+
+                <p>
+                    Select your current location
+                    using GPS or map.
+                </p>
+
+            </div>
+
+
+            <!-- WEATHER MONITORING -->
+
+            <div class="feature-card"
+                 onclick="window.location.href='pages/weather.html'"
+                 style="cursor: pointer;">
+
+                <div class="feature-icon">
+                    🌦️
+                </div>
+
+                <h3>
+                    Weather Monitoring
+                </h3>
+
+                <p>
+                    Collect temperature, rainfall,
+                    humidity and weather information.
+                </p>
+
+            </div>
+
+
+            <!-- WATER LEVEL MONITORING -->
+
+            <div class="feature-card"
+                 onclick="window.location.href='pages/waterlevel.html'"
+                 style="cursor: pointer;">
+
+                <div class="feature-icon">
+                    💧
+                </div>
+
+                <h3>
+                    Water Level Monitoring
+                </h3>
+
+                <p>
+                    IoT sensors can monitor water
+                    levels in flood-prone locations.
+                </p>
+
+            </div>
+
+
+            <!-- WATERLOGGING PREDICTION -->
+
+            <div class="feature-card"
+     onclick="window.location.href='pages/riskanalysis.html'"
+     style="cursor: pointer;">
+
+    <div class="feature-icon">
+        🔮
+    </div>
+
+    <h3>
+        Waterlogging Prediction
+    </h3>
+
+    <p>
+        Predict the possibility of
+        waterlogging using collected data.
+    </p>
+
+</div>
+
+            <!-- RISK MAP -->
+
+            <div class="feature-card"
+     onclick="window.location.href='pages/map.html'"
+     style="cursor: pointer;">
+
+    <div class="feature-icon">
+        🗺️
+    </div>
+
+    <h3>
+        Risk Map
+    </h3>
+
+    <p>
+        Display low, medium and high
+        risk areas on a map.
+    </p>
+
+</div>
+
+<!-- HISTORICAL HOTSPOTS -->
+<div class="feature-card"
+     onclick="window.location.href='pages/hotspots.html'"
+     style="cursor: pointer;">
+
+    <div class="feature-icon">📍</div>
+
+    <h3>Historical Hotspots</h3>
+
+    <p>
+        Identify locations where waterlogging has
+        repeatedly occurred.
+    </p>
+
+</div>
+
+            <!-- CITIZEN REPORTING -->
+
+           <div class="feature-card"
+     onclick="window.location.href='pages/report.html'"
+     style="cursor: pointer;">
+
+    <div class="feature-icon">
+        📝
+    </div>
+
+    <h3>
+        Citizen Reporting
+    </h3>
+
+    <p>
+        Citizens can report waterlogged
+        locations to authorities.
+    </p>
+
+</div>
+
+
+            <!-- EMERGENCY ALERTS -->
+
+            <div class="feature-card"
+                 onclick="window.location.href='pages/emergency.html'"
+                 style="cursor: pointer;">
+
+                <div class="feature-icon">
+                    🚨
+                </div>
+
+                <h3>
+                    Emergency Alerts
+                </h3>
+
+                <p>
+                    Provide early warnings when
+                    high-risk conditions are detected.
+                </p>
+
+            </div>
+
+
+            <!-- ADMIN DASHBOARD -->
+
+            <div class="feature-card"
+                 onclick="window.location.href='pages/admin.html'"
+                 style="cursor: pointer;">
+
+                <div class="feature-icon">
+                    📊
+                </div>
+
+                <h3>
+                    Admin Dashboard
+                </h3>
+
+                <p>
+                    Authorities can monitor locations,
+                    reports, sensors and alerts.
+                </p>
+
+            </div>
+
+
+            <!-- SAFETY INFORMATION -->
+
+            <div class="feature-card"
+     onclick="window.location.href='pages/safety.html'"
+     style="cursor: pointer;">
+
+    <div class="feature-icon">
+        🛡️
+    </div>
+
+    <h3>
+        Safety Information
+    </h3>
+
+    <p>
+        Provide safety instructions during
+        dangerous waterlogging conditions.
+    </p>
+
+</div>
+            
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= RISK LEVEL ================= -->
+
+    <section class="risk-section" id="risk">
+
+        <h2 class="section-title">
+            Water Logging Risk Levels
+        </h2>
+
+        <p class="section-description">
+            AQUANEX analyzes environmental conditions
+            and classifies the waterlogging risk.
+        </p>
+
+        <div class="risk-grid">
+
+            <div class="risk-card low-risk">
+
+                <div class="risk-symbol">🟢</div>
+
+                <h3>LOW RISK</h3>
+
+                <p>
+                    Normal conditions. No immediate
+                    waterlogging threat is detected.
+                </p>
+
+            </div>
+
+
+            <div class="risk-card medium-risk">
+
+                <div class="risk-symbol">🟠</div>
+
+                <h3>MEDIUM RISK</h3>
+
+                <p>
+                    Waterlogging may occur.
+                    Citizens should remain alert.
+                </p>
+
+            </div>
+
+
+            <div class="risk-card high-risk">
+
+                <div class="risk-symbol">🔴</div>
+
+                <h3>HIGH RISK</h3>
+
+                <p>
+                    Dangerous waterlogging conditions
+                    may occur. Avoid affected areas.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= HOW AQUANEX WORKS ================= -->
+
+    <section class="how-section" id="how-it-works">
+
+        <h2 class="section-title">
+            How AQUANEX Works
+        </h2>
+
+        <p class="section-description">
+            AQUANEX follows a simple process to
+            predict and prevent waterlogging.
+        </p>
+
+        <div class="steps">
+
+            <div class="step">
+
+                <div class="step-number">01</div>
+
+                <h3>Location</h3>
+
+                <p>
+                    Select your location using GPS
+                    or the interactive map.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">02</div>
+
+                <h3>Data Collection</h3>
+
+                <p>
+                    Collect rainfall, weather and
+                    water-level information.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">03</div>
+
+                <h3>Analyze</h3>
+
+                <p>
+                    Analyze the collected environmental
+                    and location data.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">04</div>
+
+                <h3>Predict</h3>
+
+                <p>
+                    Determine the possibility and
+                    severity of waterlogging.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">05</div>
+
+                <h3>Alert</h3>
+
+                <p>
+                    Send warnings so people and
+                    authorities can take action.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= WHO BENEFITS ================= -->
+
+    <section class="benefits-section" id="benefits">
+
+        <h2 class="section-title white-title">
+            Who Benefits From AQUANEX?
+        </h2>
+
+        <p class="section-description benefits-description">
+            AQUANEX helps citizens, emergency teams
+            and authorities respond to waterlogging.
+        </p>
+
+        <div class="benefit-grid">
+
+            <div class="benefit-card">
+
+                <div>👨‍👩‍👧</div>
+
+                <h3>Citizens</h3>
+
+                <p>
+                    Check waterlogging risk before
+                    travelling and receive warnings.
+                </p>
+
+            </div>
+
+
+            <div class="benefit-card">
+
+                <div>🚑</div>
+
+                <h3>Emergency Services</h3>
+
+                <p>
+                    Identify affected areas and
+                    plan safer emergency routes.
+                </p>
+
+            </div>
+
+
+            <div class="benefit-card">
+
+                <div>🏛️</div>
+
+                <h3>Authorities</h3>
+
+                <p>
+                    Monitor risky areas and coordinate
+                    preventive actions.
+                </p>
+
+            </div>
+
+
+            <div class="benefit-card">
+
+                <div>🚗</div>
+
+                <h3>Traffic Management</h3>
+
+                <p>
+                    Identify dangerous roads and
+                    manage traffic effectively.
+                </p>
+
+            </div>
+
+
+            <div class="benefit-card">
+
+                <div>🏙️</div>
+
+                <h3>Smart Cities</h3>
+
+                <p>
+                    Support better drainage planning
+                    and disaster management.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SAFETY ================= -->
+
+    <section class="safety-section">
+
+        <h2 class="section-title">
+            Safety First
+        </h2>
+
+        <div class="safety-box">
+
+            <div class="safety-item">
+                ⚠️
+                <span>
+                    Avoid roads marked as high risk.
+                </span>
+            </div>
+
+            <div class="safety-item">
+                📢
+                <span>
+                    Follow official emergency alerts.
+                </span>
+            </div>
+
+            <div class="safety-item">
+                🚗
+                <span>
+                    Avoid dangerous flooded roads.
+                </span>
+            </div>
+
+            <div class="safety-item">
+                📝
+                <span>
+                    Report waterlogging to authorities.
+                </span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="contact-section" id="contact">
+
+        <h2>
+            AQUANEX
+        </h2>
+
+        <p>
+            Predict • Monitor • Alert • Protect
+        </p>
+
+        <p>
+            Smart technology for safer communities
+            and smarter cities.
+        </p>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            🌊 AQUANEX
+        </div>
+
+        <p>
+            Water Logging Prediction System
+        </p>
+
+        <p>
+            Predict • Monitor • Alert • Protect
+        </p>
+
+        <p>
+            © 2026 AQUANEX. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

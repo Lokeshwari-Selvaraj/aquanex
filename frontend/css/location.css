@@ -1,0 +1,453 @@
+/* =====================================================
+   AQUANEX
+   LOCATION SELECTION
+   ===================================================== */
+
+
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #f2f8fb;
+
+    color: #173b4d;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    height: 75px;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    box-shadow:
+        0 2px 12px rgba(0, 0, 0, 0.08);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+/* ================= LOGO ================= */
+
+.logo {
+    font-size: 27px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: #075b78;
+}
+
+.logo span {
+    color: #0bb5a5;
+}
+
+
+/* ================= NAV ================= */
+
+nav {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+nav a {
+    color: #087ea4;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #075b78;
+}
+
+
+/* ================= MAIN ================= */
+
+.location-container {
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 55px 0;
+}
+
+
+/* ================= HEADING ================= */
+
+.location-heading {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.small-title {
+    color: #0b8d91;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+.location-heading h1 {
+    color: #075b78;
+
+    font-size: 40px;
+
+    margin: 12px 0;
+}
+
+.location-heading p {
+    color: #647a83;
+
+    max-width: 700px;
+
+    margin: auto;
+
+    line-height: 1.6;
+
+    font-size: 16px;
+}
+
+
+/* ================= BUTTONS ================= */
+
+.location-buttons {
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+.location-buttons button {
+    padding: 13px 22px;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin: 5px;
+
+    transition: 0.3s;
+}
+
+
+/* GPS BUTTON */
+
+.gps-button {
+    border: none;
+
+    background: #087ea4;
+
+    color: white;
+}
+
+.gps-button:hover {
+    background: #075b78;
+
+    transform: translateY(-2px);
+}
+
+
+/* CLEAR BUTTON */
+
+.clear-button {
+    background: white;
+
+    color: #087ea4;
+
+    border: 2px solid #087ea4;
+}
+
+.clear-button:hover {
+    background: #087ea4;
+
+    color: white;
+}
+
+
+/* ================= STATUS ================= */
+
+.status {
+    background: white;
+
+    padding: 14px;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+    margin-bottom: 20px;
+
+    color: #536c77;
+
+    box-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+
+/* ================= MAP ================= */
+
+#map {
+    width: 100%;
+
+    height: 480px;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 7px 25px rgba(0, 70, 100, 0.12);
+
+    border: 3px solid white;
+}
+
+
+/* ================= LOCATION BOX ================= */
+
+.location-box {
+    background: white;
+
+    margin-top: 25px;
+
+    padding: 28px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.location-box h2 {
+    color: #075b78;
+
+    margin-bottom: 22px;
+
+    text-align: center;
+}
+
+
+/* ================= DETAILS ================= */
+
+.location-details {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.detail {
+    background: #eef9fc;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.detail-icon {
+    font-size: 30px;
+}
+
+.detail h3 {
+    color: #087ea4;
+
+    font-size: 15px;
+
+    margin-bottom: 7px;
+}
+
+.detail p {
+    color: #4f6872;
+
+    font-size: 14px;
+
+    word-break: break-word;
+}
+
+
+/* ================= NEXT SECTION ================= */
+
+.next-section {
+    margin-top: 25px;
+
+    background: #075b78;
+
+    color: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    text-align: center;
+}
+
+.next-section h2 {
+    margin-bottom: 10px;
+}
+
+.next-section p {
+    max-width: 700px;
+
+    margin: auto;
+
+    line-height: 1.6;
+
+    opacity: 0.9;
+}
+
+
+/* WEATHER BUTTON */
+
+.weather-button {
+    margin-top: 20px;
+
+    padding: 13px 23px;
+
+    background: white;
+
+    color: #075b78;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.weather-button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #043b50;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 28px;
+
+    margin-top: 20px;
+}
+
+.footer-logo {
+    font-size: 25px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 6px;
+
+    opacity: 0.85;
+
+    font-size: 13px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 750px) {
+
+    header {
+        padding: 0 20px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    .location-heading h1 {
+        font-size: 32px;
+    }
+
+    #map {
+        height: 400px;
+    }
+
+    .location-details {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .location-container {
+        width: 94%;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    #map {
+        height: 350px;
+    }
+
+}

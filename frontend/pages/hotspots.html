@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Historical Hotspots - AQUANEX</title>
+
+    <link rel="stylesheet"
+          href="../css/hotspots.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+     ===================================================== -->
+
+<header>
+
+    <div class="header-content">
+
+        <h1>AQUANEX</h1>
+
+        <p>Water Logging Prediction System</p>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     NAVIGATION
+     ===================================================== -->
+
+<nav>
+
+    <a href="../index.html">
+        Home
+    </a>
+
+    <a href="location.html">
+        Location
+    </a>
+
+    <a href="weather.html">
+        Weather
+    </a>
+
+    <a href="waterlevel.html">
+        Water Level
+    </a>
+
+    <a href="riskanalysis.html">
+        Risk Analysis
+    </a>
+
+    <a href="report.html">
+        Report
+    </a>
+
+    <a href="emergency.html">
+    Emergency Alerts
+</a>
+
+<a href="safety.html">
+    Safety
+</a>
+</nav>
+
+
+<!-- =====================================================
+     MAIN CONTENT
+     ===================================================== -->
+
+<main>
+
+    <div class="hotspot-container">
+
+
+        <!-- PAGE TITLE -->
+
+        <div class="page-title">
+
+            <h2>Historical Waterlogging Hotspots</h2>
+
+            <p>
+                View locations where waterlogging has
+                been reported repeatedly.
+            </p>
+
+        </div>
+
+
+        <!-- =================================================
+             INFORMATION BOX
+             ================================================= -->
+
+        <div class="info-box">
+
+            <h3>📊 What are Historical Hotspots?</h3>
+
+            <p>
+                AQUANEX uses previous waterlogging reports
+                to identify locations where waterlogging
+                occurs repeatedly.
+            </p>
+
+        </div>
+
+
+        <!-- =================================================
+             LOAD BUTTON
+             ================================================= -->
+
+        <button
+            id="loadHotspotsButton"
+            class="load-button"
+            onclick="loadHotspots()">
+
+            🔄 Load Historical Hotspots
+
+        </button>
+
+
+        <!-- =================================================
+             STATUS
+             ================================================= -->
+
+        <div
+            id="hotspotStatus"
+            class="hotspot-status">
+
+            Click the button to load historical reports.
+
+        </div>
+
+
+        <!-- =================================================
+             HOTSPOT SUMMARY
+             ================================================= -->
+
+        <div
+            id="hotspotSummary"
+            class="hotspot-summary">
+
+        </div>
+
+
+        <!-- =================================================
+             HOTSPOT LIST
+             ================================================= -->
+
+        <div
+            id="hotspotList"
+            class="hotspot-list">
+
+        </div>
+
+
+    </div>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+     ===================================================== -->
+
+<footer>
+
+    <p>
+        © 2026 AQUANEX | Water Logging Prediction System
+    </p>
+
+</footer>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+     ===================================================== -->
+
+<script src="../js/hotspots.js"></script>
+
+</body>
+
+</html>

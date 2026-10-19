@@ -1,0 +1,316 @@
+/* =====================================================
+   AQUANEX
+   FEATURE 11 - EMERGENCY ALERTS
+   ===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f9fb;
+    color: #31566a;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    background: #0783aa;
+    color: white;
+    padding: 22px 20px;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.header-content p {
+    margin: 6px 0 0;
+}
+
+
+/* ================= NAVIGATION ================= */
+
+nav {
+    background: #ffffff;
+    padding: 14px 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+nav a {
+    text-decoration: none;
+    color: #31566a;
+    font-weight: 600;
+    padding: 9px 12px;
+    border-radius: 7px;
+}
+
+nav a:hover {
+    background: #e5f5fa;
+    color: #0783aa;
+}
+
+
+/* ================= MAIN ================= */
+
+main {
+    padding: 35px 20px;
+}
+
+.emergency-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* ================= PAGE TITLE ================= */
+
+.page-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.page-title h2 {
+    margin-bottom: 10px;
+    color: #164b60;
+}
+
+.page-title p {
+    color: #71828c;
+}
+
+
+/* ================= ALERT BOX ================= */
+
+.alert-box {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 35px;
+    text-align: center;
+    border: 2px solid #c9e3ed;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+}
+
+.alert-icon {
+    font-size: 55px;
+    margin-bottom: 12px;
+}
+
+.alert-box h2 {
+    margin: 10px 0;
+}
+
+.alert-box p {
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+
+/* Alert levels */
+
+.alert-box.low {
+    border-color: #54a96b;
+    background: #f0faf3;
+}
+
+.alert-box.medium {
+    border-color: #e6a52f;
+    background: #fff9ed;
+}
+
+.alert-box.high {
+    border-color: #d62828;
+    background: #fff1f1;
+}
+
+
+/* ================= RISK INFORMATION ================= */
+
+.risk-information,
+.safety-section,
+.location-section {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.risk-information h2,
+.safety-section h2,
+.location-section h2 {
+    margin-top: 0;
+    color: #164b60;
+}
+
+
+/* ================= INFO GRID ================= */
+
+.info-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(3, 1fr);
+    gap: 18px;
+}
+
+.info-card {
+    background: #f4f9fb;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #d8ebf1;
+}
+
+.info-card h3 {
+    margin-top: 0;
+    color: #71828c;
+}
+
+.info-card p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0783aa;
+}
+
+
+/* ================= SAFETY ================= */
+
+#safetyInstructions {
+    line-height: 1.7;
+}
+
+.safety-item {
+    background: #f4f9fb;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-left: 4px solid #0783aa;
+    border-radius: 5px;
+}
+
+
+/* ================= LOCATION ================= */
+
+.location-section p {
+    margin: 10px 0;
+}
+
+.location-section span {
+    font-weight: bold;
+    color: #0783aa;
+}
+
+
+/* ================= BUTTON ================= */
+
+.button-section {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.button-section button {
+    background: #0783aa;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.button-section button:hover {
+    background: #056b89;
+}
+
+.button-section button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* ================= STATUS ================= */
+
+.emergency-status {
+    text-align: center;
+    padding: 14px;
+    margin-top: 15px;
+    color: #71828c;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #164b60;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        justify-content: flex-start;
+    }
+
+    .alert-box {
+        padding: 25px 15px;
+    }
+
+    .header-content h1 {
+        font-size: 26px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    main {
+        padding: 20px 12px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .alert-icon {
+        font-size: 45px;
+    }
+
+}
+.button-section {
+    position: relative;
+    z-index: 10;
+}
+
+.button-section button {
+    position: relative;
+    z-index: 11;
+    pointer-events: auto;
+}

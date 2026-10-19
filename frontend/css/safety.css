@@ -1,0 +1,300 @@
+/* =====================================================
+   AQUANEX
+   SAFETY INFORMATION PAGE
+   ===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f9fb;
+    color: #31566a;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    background: #0783aa;
+    color: white;
+    padding: 22px;
+    text-align: center;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 34px;
+    letter-spacing: 2px;
+}
+
+.header-content p {
+    margin: 8px 0 0;
+    font-size: 16px;
+}
+
+
+/* ================= NAVIGATION ================= */
+
+nav {
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+nav a {
+    text-decoration: none;
+    color: #31566a;
+    padding: 9px 14px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    background: #0783aa;
+    color: white;
+}
+
+
+/* ================= MAIN ================= */
+
+main {
+    padding: 35px 20px;
+}
+
+.safety-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* ================= PAGE TITLE ================= */
+
+.page-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.page-title h2 {
+    margin-bottom: 10px;
+    color: #056b89;
+    font-size: 30px;
+}
+
+.page-title p {
+    margin: 0;
+    font-size: 16px;
+}
+
+
+/* ================= SAFETY CARDS ================= */
+
+.safety-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+    background: white;
+    margin-bottom: 20px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    border-left: 5px solid #0783aa;
+}
+
+.safety-icon {
+    font-size: 42px;
+    min-width: 55px;
+    text-align: center;
+}
+
+.safety-card h2 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #056b89;
+}
+
+.safety-card ul {
+    margin: 0;
+    padding-left: 22px;
+}
+
+.safety-card li {
+    margin-bottom: 9px;
+    line-height: 1.6;
+}
+
+
+/* ================= EMERGENCY CARD ================= */
+
+.emergency-card {
+    border-left-color: #d62828;
+}
+
+.emergency-card h2 {
+    color: #b02020;
+}
+
+
+/* ================= AQUANEX GUIDANCE ================= */
+
+.aquanex-guidance {
+    background: white;
+    padding: 28px;
+    margin-top: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.aquanex-guidance h2 {
+    text-align: center;
+    color: #056b89;
+    margin-top: 0;
+}
+
+.aquanex-guidance > p {
+    text-align: center;
+    line-height: 1.6;
+}
+
+
+/* ================= RISK GUIDE ================= */
+
+.risk-guide {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.risk {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 18px;
+    border-radius: 10px;
+    background: #f8fbfc;
+}
+
+.risk span {
+    font-size: 25px;
+}
+
+.risk h3 {
+    margin: 0 0 8px;
+}
+
+.risk p {
+    margin: 0;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+
+/* LOW */
+
+.low-risk {
+    border-top: 4px solid #16803c;
+}
+
+
+/* MEDIUM */
+
+.medium-risk {
+    border-top: 4px solid #f0a500;
+}
+
+
+/* HIGH */
+
+.high-risk {
+    border-top: 4px solid #d62828;
+}
+
+
+/* ================= BUTTONS ================= */
+
+.button-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 30px 0 10px;
+}
+
+.button-section button {
+    background: #0783aa;
+    color: white;
+    border: none;
+    padding: 13px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.button-section button:hover {
+    background: #056b89;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #31566a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 800px) {
+
+    .risk-guide {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    main {
+        padding: 25px 12px;
+    }
+
+    .page-title h2 {
+        font-size: 25px;
+    }
+
+    .safety-card {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .safety-icon {
+        text-align: left;
+    }
+
+    .header-content h1 {
+        font-size: 28px;
+    }
+
+}

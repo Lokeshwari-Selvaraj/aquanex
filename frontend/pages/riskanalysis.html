@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Risk Analysis - AQUANEX</title>
+
+    <link rel="stylesheet"
+          href="../css/riskanalysis.css">
+
+</head>
+
+
+<body>
+
+
+<header class="header">
+
+    <div class="logo">
+        AQUANEX
+    </div>
+
+    <nav>
+
+        <a href="../index.html">
+            Home
+        </a>
+
+        <a href="emergency.html">
+    Emergency Alerts
+</a>
+
+        <a href="location.html">
+            Location
+        </a>
+
+        <a href="weather.html">
+            Weather
+        </a>
+
+        <a href="waterlevel.html">
+            Water Level
+        </a>
+
+        <a href="safety.html">
+    Safety
+</a>
+    </nav>
+
+</header>
+
+
+
+<main class="container">
+
+
+    <h1>
+        Water Logging Risk Analysis
+    </h1>
+
+    <p class="subtitle">
+        AQUANEX analyses weather, water level,
+        drainage and historical information.
+    </p>
+
+
+
+    <!-- LOCATION -->
+
+    <section class="card">
+
+        <h2>📍 Location</h2>
+
+        <div class="info-grid">
+
+            <div>
+
+                <span>
+                    Latitude
+                </span>
+
+                <strong id="latitude">
+                    --
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Longitude
+                </span>
+
+                <strong id="longitude">
+                    --
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- WEATHER -->
+
+    <section class="card">
+
+        <h2>🌦️ Weather Data</h2>
+
+        <div class="info-grid">
+
+            <div>
+
+                <span>
+                    Rainfall
+                </span>
+
+                <strong id="rainfall">
+                    --
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Temperature
+                </span>
+
+                <strong id="temperature">
+                    --
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Humidity
+                </span>
+
+                <strong id="humidity">
+                    --
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Condition
+                </span>
+
+                <strong id="condition">
+                    --
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- WATER DATA -->
+
+    <section class="card">
+
+        <h2>💧 Water Level Data</h2>
+
+        <div class="info-grid">
+
+            <div>
+
+                <span>
+                    Water Level
+                </span>
+
+                <strong id="waterLevel">
+                    --
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Water Risk
+                </span>
+
+                <strong id="waterRisk">
+                    --
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Drainage
+                </span>
+
+                <strong id="drainage">
+                    --
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Historical Reports
+                </span>
+
+                <strong id="historicalReports">
+                    --
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CALCULATE -->
+
+    <section class="calculate-card">
+
+        <button
+            type="button"
+            onclick="calculateRisk()">
+
+            🔍 Calculate Overall Risk
+
+        </button>
+
+    </section>
+
+
+
+    <!-- FINAL RESULT -->
+
+    <section class="risk-result">
+
+        <h2>
+            AQUANEX Risk Result
+        </h2>
+
+
+        <div id="riskLevel"
+             class="risk-level">
+
+            Click "Calculate Overall Risk"
+
+        </div>
+
+
+        <p id="riskScore">
+            Risk Score: --
+        </p>
+
+
+        <p id="confidence">
+            Data Confidence: --
+        </p>
+
+    </section>
+
+
+
+    <!-- FACTORS -->
+
+    <section class="card">
+
+        <h2>
+            📊 Risk Factors
+        </h2>
+
+        <div id="riskFactors">
+
+            Risk factors will appear here.
+
+        </div>
+
+    </section>
+
+
+
+    <div class="buttons">
+
+        <button
+            type="button"
+            onclick="goBackToWaterLevel()">
+
+            ← Back
+
+        </button>
+
+       <button
+    type="button"
+    onclick="goToEmergency()">
+
+    🚨 Emergency Alerts
+
+</button>
+
+
+<button
+    type="button"
+    onclick="goToHome()">
+
+    Finish
+
+</button>
+
+    </div>
+
+    <script src="../js/riskanalysis.js"></script>
+
+</main>
+
+</body>
+
+</html>

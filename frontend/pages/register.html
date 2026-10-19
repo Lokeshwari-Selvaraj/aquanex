@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AQUANEX | Registration</title>
+
+    <link rel="stylesheet" href="../css/auth.css">
+
+</head>
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+            🌊 AQUA<span>NEX</span>
+        </div>
+
+        <a href="../index.html"
+           class="home-link">
+
+            🏠 Home
+
+        </a>
+
+    </header>
+
+
+    <!-- ================= REGISTRATION ================= -->
+
+    <main class="auth-container">
+
+        <div class="auth-card register-card">
+
+            <div class="auth-icon">
+                👤
+            </div>
+
+            <h1>
+                Create Account
+            </h1>
+
+            <p class="subtitle">
+                Join AQUANEX and stay informed
+            </p>
+
+
+            <!-- REGISTRATION FORM -->
+
+            <form id="registerForm">
+
+
+                <div class="input-group">
+
+                    <label for="name">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your full name"
+                        required>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Enter your phone number"
+                        pattern="[0-9]{10}"
+                        required>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Create a password"
+                        minlength="6"
+                        required>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="confirmPassword">
+                        Confirm Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Confirm your password"
+                        minlength="6"
+                        required>
+
+                </div>
+
+
+                <div class="terms">
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                            id="terms"
+                            required>
+
+                        I agree to the AQUANEX
+                        terms and conditions.
+
+                    </label>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="auth-button">
+
+                    Create Account
+
+                </button>
+
+            </form>
+
+
+            <div id="registerMessage"
+                 class="message">
+            </div>
+
+
+            <!-- LOGIN LINK -->
+
+            <p class="switch-text">
+
+                Already have an account?
+
+                <a href="login.html">
+                    Login
+                </a>
+
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            🌊 AQUANEX - Water Logging Prediction System
+        </p>
+
+        <p>
+            Predict • Monitor • Alert • Protect
+        </p>
+
+    </footer>
+
+
+    <script src="../js/auth.js"></script>
+
+</body>
+
+</html>

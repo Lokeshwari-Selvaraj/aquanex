@@ -1,0 +1,799 @@
+/* =====================================================
+   AQUANEX - MAIN STYLE
+   ===================================================== */
+
+
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f9fc;
+    color: #173b4d;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    height: 75px;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 6%;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow:
+        0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+/* LOGO */
+
+.logo {
+    font-size: 27px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: #075b78;
+}
+
+.logo span {
+    color: #0bb5a5;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+nav a {
+    color: #294c5b;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #0786a5;
+}
+
+
+/* LOGIN BUTTON */
+
+.login-btn {
+    border: none;
+
+    background: #087ea4;
+
+    color: white;
+
+    padding: 11px 20px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: #075b78;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 590px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 70px 9%;
+
+    background:
+        linear-gradient(
+            120deg,
+            #ddf7fa,
+            #f1fbff
+        );
+}
+
+
+/* HERO CONTENT */
+
+.hero-content {
+    max-width: 620px;
+}
+
+.small-title {
+    color: #0b8d91;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    font-size: 13px;
+
+    margin-bottom: 15px;
+}
+
+.hero-content h1 {
+    font-size: 65px;
+
+    color: #075b78;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 5px;
+}
+
+.hero-content h2 {
+    font-size: 27px;
+
+    color: #07818b;
+
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    color: #536c77;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+/* HERO BUTTONS */
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.primary-btn,
+.secondary-btn {
+    padding: 14px 23px;
+
+    border-radius: 9px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.primary-btn {
+    border: none;
+
+    background: #087ea4;
+
+    color: white;
+
+    margin-right: 10px;
+}
+
+.primary-btn:hover {
+    background: #075b78;
+}
+
+.secondary-btn {
+    background: white;
+
+    border: 2px solid #087ea4;
+
+    color: #087ea4;
+}
+
+.secondary-btn:hover {
+    background: #087ea4;
+
+    color: white;
+}
+
+
+/* ================= HERO VISUAL ================= */
+
+.hero-visual {
+    width: 390px;
+
+    height: 390px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.water-circle {
+    width: 330px;
+
+    height: 330px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    box-shadow:
+        0 15px 40px rgba(0, 100, 130, 0.15);
+}
+
+.wave {
+    font-size: 115px;
+}
+
+.sensor-icon {
+    font-size: 45px;
+
+    margin-top: -15px;
+}
+
+
+/* ================= SECTION COMMON ================= */
+
+.status-section,
+.features-section,
+.risk-section,
+.how-section,
+.safety-section {
+    padding: 75px 8%;
+}
+
+.section-title {
+    text-align: center;
+
+    color: #075b78;
+
+    font-size: 34px;
+
+    margin-bottom: 12px;
+}
+
+.section-description {
+    text-align: center;
+
+    color: #667b84;
+
+    font-size: 16px;
+
+    margin-bottom: 40px;
+}
+
+
+/* ================= STATUS ================= */
+
+.status-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 22px;
+}
+
+.status-card {
+    background: white;
+
+    padding: 30px 20px;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.07);
+
+    transition: 0.3s;
+}
+
+.status-card:hover {
+    transform: translateY(-6px);
+}
+
+.card-icon {
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+.status-card h3 {
+    color: #087ea4;
+
+    margin-bottom: 10px;
+}
+
+.status-card p {
+    color: #657b84;
+
+    line-height: 1.5;
+}
+
+
+/* ================= FEATURES ================= */
+
+.features-section {
+    background: #eef9fc;
+}
+
+.feature-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 20px;
+}
+
+.feature-card {
+    background: white;
+
+    padding: 25px 20px;
+
+    min-height: 210px;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.10);
+}
+
+.feature-icon {
+    font-size: 38px;
+
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    color: #075b78;
+
+    font-size: 18px;
+
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: #687d85;
+
+    line-height: 1.5;
+
+    font-size: 14px;
+}
+
+
+/* ================= RISK ================= */
+
+.risk-section {
+    background: white;
+}
+
+.risk-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+    max-width: 1000px;
+
+    margin: auto;
+}
+
+.risk-card {
+    padding: 35px 25px;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    background: #f8fbfc;
+
+    border-top: 6px solid;
+}
+
+.risk-symbol {
+    font-size: 45px;
+}
+
+.risk-card h3 {
+    margin: 15px 0;
+
+    color: #173b4d;
+}
+
+.risk-card p {
+    color: #617780;
+
+    line-height: 1.6;
+}
+
+.low-risk {
+    border-color: #28a745;
+}
+
+.medium-risk {
+    border-color: #f4a261;
+}
+
+.high-risk {
+    border-color: #e63946;
+}
+
+
+/* ================= HOW IT WORKS ================= */
+
+.how-section {
+    background: #eef9fc;
+}
+
+.steps {
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 20px;
+}
+
+.step {
+    text-align: center;
+
+    padding: 20px;
+}
+
+.step-number {
+    width: 58px;
+
+    height: 58px;
+
+    border-radius: 50%;
+
+    background: #087ea4;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: auto;
+
+    font-weight: bold;
+
+    font-size: 17px;
+}
+
+.step h3 {
+    color: #075b78;
+
+    margin: 18px 0 10px;
+}
+
+.step p {
+    color: #647a83;
+
+    line-height: 1.5;
+
+    font-size: 14px;
+}
+
+
+/* ================= BENEFITS ================= */
+
+.benefits-section {
+    background: #075b78;
+
+    padding: 75px 8%;
+}
+
+.white-title {
+    color: white;
+}
+
+.benefit-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 20px;
+}
+
+.benefit-card {
+    padding: 25px;
+
+    border: 1px solid
+        rgba(255, 255, 255, 0.25);
+
+    border-radius: 13px;
+
+    color: white;
+}
+
+.benefit-card > div {
+    font-size: 35px;
+
+    margin-bottom: 15px;
+}
+
+.benefit-card h3 {
+    margin-bottom: 10px;
+}
+
+.benefit-card p {
+    line-height: 1.6;
+
+    opacity: 0.9;
+
+    font-size: 14px;
+}
+
+
+/* ================= SAFETY ================= */
+
+.safety-section {
+    background: white;
+}
+
+.safety-box {
+    max-width: 900px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+.safety-item {
+    background: #eef9fc;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    color: #075b78;
+
+    font-weight: bold;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact-section {
+    text-align: center;
+
+    padding: 65px 20px;
+
+    background: #e1f6f9;
+}
+
+.contact-section h2 {
+    color: #075b78;
+
+    font-size: 32px;
+
+    margin-bottom: 15px;
+}
+
+.contact-section p {
+    color: #55727c;
+
+    margin: 8px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #043b50;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px 20px;
+}
+
+.footer-logo {
+    font-size: 25px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 7px;
+
+    opacity: 0.85;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1100px) {
+
+    .feature-grid {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+    .benefit-grid {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+    .steps {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+}
+
+
+@media (max-width: 850px) {
+
+    header {
+        padding: 0 25px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 60px 25px;
+    }
+
+    .hero-visual {
+        margin-top: 45px;
+    }
+
+    .status-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .risk-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .safety-box {
+        grid-template-columns:
+            1fr;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .hero-content h1 {
+        font-size: 45px;
+    }
+
+    .hero-content h2 {
+        font-size: 21px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .hero-visual {
+        width: 280px;
+
+        height: 280px;
+    }
+
+    .water-circle {
+        width: 240px;
+
+        height: 240px;
+    }
+
+    .wave {
+        font-size: 80px;
+    }
+
+    .status-grid,
+    .feature-grid,
+    .benefit-grid,
+    .steps {
+        grid-template-columns:
+            1fr;
+    }
+
+    .hero-buttons button {
+        margin: 5px;
+    }
+
+}
+.benefits-description {
+    color: rgba(255, 255, 255, 0.85);
+}

@@ -1,0 +1,376 @@
+/* =====================================================
+   AQUANEX
+   ADMIN DASHBOARD - CSS
+   ===================================================== */
+
+
+/* =====================================================
+   GENERAL
+   ===================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f9fb;
+    color: #31566a;
+    min-height: 100vh;
+}
+
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+header {
+    background: #0783aa;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+
+.header-content h1 {
+    font-size: 32px;
+    margin-bottom: 6px;
+}
+
+
+.header-content p {
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   NAVIGATION
+   ===================================================== */
+
+nav {
+    background: white;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    flex-wrap: wrap;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #31566a;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+
+nav a:hover {
+    background: #e5f5fa;
+    color: #0783aa;
+}
+
+
+/* =====================================================
+   MAIN
+   ===================================================== */
+
+main {
+    min-height: calc(100vh - 180px);
+    padding: 40px 20px;
+}
+
+
+.admin-container {
+    max-width: 1100px;
+    margin: auto;
+    background: white;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =====================================================
+   PAGE TITLE
+   ===================================================== */
+
+.page-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.page-title h2 {
+    color: #0783aa;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+
+.page-title p {
+    color: #71828c;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   DASHBOARD SUMMARY
+   ===================================================== */
+
+.dashboard-summary {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+
+.summary-card {
+    background: #f4f9fb;
+    border: 2px solid #c9e3ed;
+    border-radius: 12px;
+    padding: 22px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+
+.summary-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+.summary-icon {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+
+.summary-card h3 {
+    color: #0783aa;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+
+.summary-card p {
+    color: #71828c;
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   LOAD BUTTON
+   ===================================================== */
+
+.load-button {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 9px;
+    background: #0783aa;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+.load-button:hover {
+    background: #056d8d;
+    transform: translateY(-1px);
+}
+
+
+.load-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+
+/* =====================================================
+   STATUS
+   ===================================================== */
+
+.dashboard-status {
+    text-align: center;
+    margin: 20px 0;
+    color: #71828c;
+    font-size: 14px;
+    font-weight: 600;
+    min-height: 20px;
+}
+
+
+/* =====================================================
+   REPORTS SECTION
+   ===================================================== */
+
+.reports-section {
+    margin-top: 30px;
+}
+
+
+.section-title {
+    margin-bottom: 20px;
+}
+
+
+.section-title h2 {
+    color: #0783aa;
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+
+
+.section-title p {
+    color: #71828c;
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   REPORT LIST
+   ===================================================== */
+
+.reports-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+
+/* =====================================================
+   REPORT CARD
+   ===================================================== */
+
+.report-card {
+    border: 2px solid #c9e3ed;
+    border-radius: 12px;
+    padding: 22px;
+    background: white;
+    transition: 0.2s;
+}
+
+
+.report-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+.report-card h3 {
+    color: #0783aa;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+
+.report-card p {
+    color: #5e7180;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 6px 0;
+}
+
+
+.report-risk {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+.report-risk.low {
+    background: #e7f6ec;
+    color: #16803c;
+}
+
+
+.report-risk.medium {
+    background: #fff4df;
+    color: #b65f00;
+}
+
+
+.report-risk.high {
+    background: #fde8e8;
+    color: #d62828;
+}
+
+
+/* =====================================================
+   NO DATA
+   ===================================================== */
+
+.no-data {
+    text-align: center;
+    padding: 30px;
+    color: #71828c;
+    background: #f4f9fb;
+    border-radius: 10px;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+footer {
+    background: #31566a;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   MOBILE RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 800px) {
+
+    .admin-container {
+        padding: 25px 20px;
+    }
+
+
+    .dashboard-summary {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .reports-list {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .dashboard-summary {
+        grid-template-columns: 1fr;
+    }
+
+
+    .page-title h2 {
+        font-size: 24px;
+    }
+
+}

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Risk Map - AQUANEX</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+    <!-- AQUANEX Map CSS -->
+    <link rel="stylesheet"
+          href="../css/map.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+     ===================================================== -->
+
+<header>
+
+    <div class="header-content">
+
+        <h1>AQUANEX</h1>
+
+        <p>Water Logging Prediction System</p>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     NAVIGATION
+     ===================================================== -->
+
+<nav>
+
+    <a href="../index.html">
+        Home
+    </a>
+
+    <a href="location.html">
+        Location
+    </a>
+
+    <a href="weather.html">
+        Weather
+    </a>
+
+    <a href="waterlevel.html">
+        Water Level
+    </a>
+
+    <a href="riskanalysis.html">
+        Risk Analysis
+    </a>
+
+    <a href="report.html">
+        Report
+    </a>
+
+    <a href="hotspots.html">
+        Hotspots
+    </a>
+
+    <a href="emergency.html">
+    Emergency Alerts
+</a>
+
+<a href="safety.html">
+    Safety
+</a>
+
+</nav>
+
+
+<!-- =====================================================
+     MAIN CONTENT
+     ===================================================== -->
+
+<main>
+
+    <div class="map-container">
+
+
+        <!-- =================================================
+             PAGE TITLE
+             ================================================= -->
+
+        <div class="page-title">
+
+            <h2>🗺️ Interactive Risk Map</h2>
+
+            <p>
+                View reported waterlogging locations
+                and their risk levels on the map.
+            </p>
+
+        </div>
+
+
+        <!-- =================================================
+             INFORMATION BOX
+             ================================================= -->
+
+        <div class="info-box">
+
+            <h3>📍 Waterlogging Locations</h3>
+
+            <p>
+                AQUANEX displays locations reported by users.
+                The marker color represents the water-level
+                risk at the reported location.
+            </p>
+
+        </div>
+
+
+        <!-- =================================================
+             RISK LEGEND
+             ================================================= -->
+
+        <div class="legend">
+
+            <div class="legend-item">
+
+                <span class="legend-marker low"></span>
+
+                <span>🟢 Low Risk</span>
+
+            </div>
+
+
+            <div class="legend-item">
+
+                <span class="legend-marker medium"></span>
+
+                <span>🟠 Medium Risk</span>
+
+            </div>
+
+
+            <div class="legend-item">
+
+                <span class="legend-marker high"></span>
+
+                <span>🔴 High Risk</span>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             LOAD MAP BUTTON
+             ================================================= -->
+
+        <button
+            id="loadMapButton"
+            class="load-button"
+            onclick="loadRiskMap()">
+
+            🗺️ Load Risk Map
+
+        </button>
+
+
+        <!-- =================================================
+             STATUS
+             ================================================= -->
+
+        <div
+            id="mapStatus"
+            class="map-status">
+
+            Click the button to load reported locations.
+
+        </div>
+
+
+        <!-- =================================================
+             MAP
+             ================================================= -->
+
+        <div
+            id="riskMap"
+            class="risk-map">
+
+        </div>
+
+
+        <!-- =================================================
+             SUMMARY
+             ================================================= -->
+
+        <div
+            id="mapSummary"
+            class="map-summary">
+
+        </div>
+
+
+    </div>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+     ===================================================== -->
+
+<footer>
+
+    <p>
+        © 2026 AQUANEX | Water Logging Prediction System
+    </p>
+
+</footer>
+
+
+<!-- =====================================================
+     LEAFLET JAVASCRIPT
+     ===================================================== -->
+
+<script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+</script>
+
+
+<!-- =====================================================
+     AQUANEX MAP JAVASCRIPT
+     ===================================================== -->
+
+<script src="../js/map.js"></script>
+
+
+</body>
+
+</html>

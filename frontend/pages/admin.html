@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard - AQUANEX</title>
+
+    <link rel="stylesheet"
+          href="../css/admin.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+     ===================================================== -->
+
+<header>
+
+    <div class="header-content">
+
+        <h1>AQUANEX</h1>
+
+        <p>Water Logging Prediction System</p>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     NAVIGATION
+     ===================================================== -->
+
+<nav>
+
+    <a href="../index.html">
+        Home
+    </a>
+
+    <a href="location.html">
+        Location
+    </a>
+
+    <a href="weather.html">
+        Weather
+    </a>
+
+    <a href="waterlevel.html">
+        Water Level
+    </a>
+
+    <a href="riskanalysis.html">
+        Risk Analysis
+    </a>
+
+    <a href="report.html">
+        Report
+    </a>
+
+    <a href="hotspots.html">
+        Hotspots
+    </a>
+
+    <a href="map.html">
+        Risk Map
+    </a>
+
+    <a href="emergency.html">
+    Emergency Alerts
+</a>
+
+<a href="safety.html">
+    Safety
+</a>
+
+</nav>
+
+
+<!-- =====================================================
+     MAIN
+     ===================================================== -->
+
+<main>
+
+    <div class="admin-container">
+
+
+        <!-- =================================================
+             PAGE TITLE
+             ================================================= -->
+
+        <div class="page-title">
+
+            <h2>🛠️ Admin Dashboard</h2>
+
+            <p>
+                Monitor waterlogging reports and
+                risk information collected by AQUANEX.
+            </p>
+
+        </div>
+
+
+        <!-- =================================================
+             DASHBOARD SUMMARY
+             ================================================= -->
+
+        <div class="dashboard-summary">
+
+
+            <div class="summary-card">
+
+                <div class="summary-icon">
+                    📊
+                </div>
+
+                <h3 id="totalReports">
+                    0
+                </h3>
+
+                <p>
+                    Total Reports
+                </p>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="summary-icon">
+                    🟢
+                </div>
+
+                <h3 id="lowRisk">
+                    0
+                </h3>
+
+                <p>
+                    Low Risk
+                </p>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="summary-icon">
+                    🟠
+                </div>
+
+                <h3 id="mediumRisk">
+                    0
+                </h3>
+
+                <p>
+                    Medium Risk
+                </p>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="summary-icon">
+                    🔴
+                </div>
+
+                <h3 id="highRisk">
+                    0
+                </h3>
+
+                <p>
+                    High Risk
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- =================================================
+             LOAD BUTTON
+             ================================================= -->
+
+        <button
+            id="loadDashboardButton"
+            class="load-button"
+            onclick="loadDashboard()">
+
+            🔄 Load Dashboard Data
+
+        </button>
+
+
+        <!-- =================================================
+             STATUS
+             ================================================= -->
+
+        <div
+            id="dashboardStatus"
+            class="dashboard-status">
+
+            Click the button to load dashboard data.
+
+        </div>
+
+
+        <!-- =================================================
+             RECENT REPORTS
+             ================================================= -->
+
+        <section class="reports-section">
+
+            <div class="section-title">
+
+                <h2>
+                    📋 Waterlogging Reports
+                </h2>
+
+                <p>
+                    Recent reports submitted by users.
+                </p>
+
+            </div>
+
+
+            <div
+                id="reportsList"
+                class="reports-list">
+
+            </div>
+
+        </section>
+
+
+    </div>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+     ===================================================== -->
+
+<footer>
+
+    <p>
+        © 2026 AQUANEX | Water Logging Prediction System
+    </p>
+
+</footer>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+     ===================================================== -->
+
+<script src="../js/admin.js"></script>
+
+
+</body>
+
+</html>

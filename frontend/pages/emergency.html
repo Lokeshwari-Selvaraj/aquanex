@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Emergency Alerts - AQUANEX</title>
+
+    <link rel="stylesheet"
+          href="../css/emergency.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="header-content">
+
+        <h1>AQUANEX</h1>
+
+        <p>Water Logging Prediction System</p>
+
+    </div>
+
+</header>
+
+
+<nav>
+
+    <a href="../index.html">Home</a>
+
+    <a href="location.html">Location</a>
+
+    <a href="weather.html">Weather</a>
+
+    <a href="waterlevel.html">Water Level</a>
+
+    <a href="riskanalysis.html">Risk Analysis</a>
+
+    <a href="report.html">Report</a>
+
+    <a href="hotspots.html">Hotspots</a>
+
+    <a href="map.html">Risk Map</a>
+
+    <a href="safety.html">
+    Safety
+</a>
+
+    <a href="admin.html">Admin Dashboard</a>
+
+</nav>
+
+
+<main>
+
+    <div class="emergency-container">
+
+        <div class="page-title">
+
+            <h2>🚨 Emergency Alerts</h2>
+
+            <p>
+                View waterlogging risk alerts and safety information
+                for the selected area.
+            </p>
+
+        </div>
+
+
+        <div id="alertBox"
+             class="alert-box">
+
+            <div id="alertIcon"
+                 class="alert-icon">
+                ⚠️
+            </div>
+
+            <h2 id="alertTitle">
+                No Alert Available
+            </h2>
+
+            <p id="alertMessage">
+                Please complete the Risk Analysis first.
+            </p>
+
+        </div>
+
+
+        <div class="risk-information">
+
+            <h2>📊 Current Risk Information</h2>
+
+            <div class="info-grid">
+
+                <div class="info-card">
+
+                    <h3>Risk Level</h3>
+
+                    <p id="riskLevel">
+                        Not Available
+                    </p>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <h3>Risk Score</h3>
+
+                    <p id="riskScore">
+                        Not Available
+                    </p>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <h3>Data Confidence</h3>
+
+                    <p id="confidence">
+                        Not Available
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="safety-section">
+
+            <h2>🛡️ Safety Instructions</h2>
+
+            <div id="safetyInstructions">
+
+                <p>
+                    Complete the Risk Analysis to view
+                    safety instructions.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="location-section">
+
+            <h2>📍 Selected Location</h2>
+
+            <p>
+                Latitude:
+                <span id="latitude">
+                    Not Available
+                </span>
+            </p>
+
+            <p>
+                Longitude:
+                <span id="longitude">
+                    Not Available
+                </span>
+            </p>
+
+        </div>
+
+
+        <div class="button-section">
+
+   <<button
+    type="button"
+    id="refreshAlertButton">
+
+    🔄 Refresh Alert
+
+</button>
+
+        <div id="emergencyStatus"
+             class="emergency-status">
+
+            Complete Risk Analysis to generate an alert.
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 AQUANEX |
+        Water Logging Prediction System
+    </p>
+
+</footer>
+
+
+<script src="../js/emergency.js"></script>
+
+</body>
+
+</html>
